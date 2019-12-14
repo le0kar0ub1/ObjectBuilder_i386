@@ -23,7 +23,7 @@
 
 	- For the moment, you can't define data in ".text" section or put executable instructions in ".data".
 
-	- You can only declared string and define uninitialize data in section ".data" and ".rodata".
+	- You can only declare string and define uninitialized data in section ".data" and ".rodata".
 
 	- You can't add/sub/mul/div without using instruction ("mov eax, 1 + 1" will not work).
 
