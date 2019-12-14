@@ -1,0 +1,18 @@
+#ifndef _SECTION_DESCRIPTOR_H
+#define _SECTION_DESCRIPTOR_H
+
+#include "builtin.h"
+
+#define SYMBOL_SECTION_NO_CARE 0x41
+#define SYMBOL_IS_NULL_SECTION 0xC
+
+
+#define SYMBOL_FLAG_ABS    0x0
+#define SYMBOL_FLAG_REL_8  0x1
+#define SYMBOL_FLAG_REL_16 0x2
+#define SYMBOL_FLAG_REL_32 0x3
+#define SYMBOL_FLAG_REL_32_TEXT 0x4
+
+#define SYMBOL_CONDITIONAL_JMP 0x4
+
+#endif
