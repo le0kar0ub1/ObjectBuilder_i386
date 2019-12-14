@@ -18,12 +18,19 @@
 ## THINGS:
 
 	- The only entry symbol allowed is the classical "_start" and it must be declared as global.
+
 	- A list of available instruction will be provided, you can catch all instructions available with a "cat src/parser_code.c".
-	- For the moment, you can't define data in `.text` section or put executable instructions in `.data`.
-	- You can only declared string and define uninitialize data in section `.data` and `.rodata`.
+
+	- For the moment, you can't define data in *.text* section or put executable instructions in *.data*.
+
+	- You can only declared string and define uninitialize data in section *.data* and *.rodata*.
+
 	- You can't add/sub/mul/div without using instruction ("mov eax, 1 + 1" will not work).
-	- You can use symbols declared in `.data` section only in `.text` section.
-	- No far jmp allowed, and only 128b jmp allowed... sorry for that, this is a an error.
+
+	- You can use symbols declared in *.data* section only in *.text* section.
+
+	- No far jump allowed, and 128B maximal jump size... come from error.
+
 	- You can Communicate with other file only with the instruction "call".
 
 ## EPILOGUE:
